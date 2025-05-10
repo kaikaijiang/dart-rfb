@@ -12,14 +12,16 @@ part of 'set_pixel_format_message.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RemoteFrameBufferSetPixelFormatMessage {
   RemoteFrameBufferPixelFormat get pixelFormat =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RemoteFrameBufferSetPixelFormatMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $RemoteFrameBufferSetPixelFormatMessageCopyWith<
           RemoteFrameBufferSetPixelFormatMessage>
       get copyWith => throw _privateConstructorUsedError;
@@ -49,6 +51,8 @@ class _$RemoteFrameBufferSetPixelFormatMessageCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RemoteFrameBufferSetPixelFormatMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -62,6 +66,8 @@ class _$RemoteFrameBufferSetPixelFormatMessageCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of RemoteFrameBufferSetPixelFormatMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RemoteFrameBufferPixelFormatCopyWith<$Res> get pixelFormat {
@@ -97,6 +103,8 @@ class __$$RemoteFrameBufferSetPixelFormatMessageImplCopyWithImpl<$Res>
       $Res Function(_$RemoteFrameBufferSetPixelFormatMessageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RemoteFrameBufferSetPixelFormatMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,7 +136,7 @@ class _$RemoteFrameBufferSetPixelFormatMessageImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferSetPixelFormatMessageImpl &&
@@ -139,7 +147,9 @@ class _$RemoteFrameBufferSetPixelFormatMessageImpl
   @override
   int get hashCode => Object.hash(runtimeType, pixelFormat);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RemoteFrameBufferSetPixelFormatMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RemoteFrameBufferSetPixelFormatMessageImplCopyWith<
@@ -158,8 +168,11 @@ abstract class _RemoteFrameBufferSetPixelFormatMessage
 
   @override
   RemoteFrameBufferPixelFormat get pixelFormat;
+
+  /// Create a copy of RemoteFrameBufferSetPixelFormatMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RemoteFrameBufferSetPixelFormatMessageImplCopyWith<
           _$RemoteFrameBufferSetPixelFormatMessageImpl>
       get copyWith => throw _privateConstructorUsedError;

@@ -12,7 +12,7 @@ part of 'security_type.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RemoteFrameBufferSecurityType {
@@ -86,6 +86,9 @@ class _$RemoteFrameBufferSecurityTypeCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of RemoteFrameBufferSecurityType
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -105,6 +108,9 @@ class __$$RemoteFrameBufferSecurityTypeInvalidImplCopyWithImpl<$Res>
       _$RemoteFrameBufferSecurityTypeInvalidImpl _value,
       $Res Function(_$RemoteFrameBufferSecurityTypeInvalidImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RemoteFrameBufferSecurityType
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -119,7 +125,7 @@ class _$RemoteFrameBufferSecurityTypeInvalidImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferSecurityTypeInvalidImpl);
@@ -226,6 +232,9 @@ class __$$RemoteFrameBufferSecurityTypeNoneImplCopyWithImpl<$Res>
       _$RemoteFrameBufferSecurityTypeNoneImpl _value,
       $Res Function(_$RemoteFrameBufferSecurityTypeNoneImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RemoteFrameBufferSecurityType
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -240,7 +249,7 @@ class _$RemoteFrameBufferSecurityTypeNoneImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferSecurityTypeNoneImpl);
@@ -350,6 +359,9 @@ class __$$RemoteFrameBufferSecurityTypeVncAuthenticationImplCopyWithImpl<$Res>
       _$RemoteFrameBufferSecurityTypeVncAuthenticationImpl _value,
       $Res Function(_$RemoteFrameBufferSecurityTypeVncAuthenticationImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RemoteFrameBufferSecurityType
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -364,7 +376,7 @@ class _$RemoteFrameBufferSecurityTypeVncAuthenticationImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferSecurityTypeVncAuthenticationImpl);

@@ -28,8 +28,8 @@ And here we are, after a weekend, with the first, minimal, protocol implementati
 - ⬜ Hextile (obsolescent)
 - ⬜ TRLE
 - ⬜ ZRLE
-- ⬜ Cursor pseudo-encoding
-- ⬜ DesktopSize pseudo-encoding
+- ✅ Cursor pseudo-encoding
+- ✅ DesktopSize pseudo-encoding
 
 ### Security Types
 

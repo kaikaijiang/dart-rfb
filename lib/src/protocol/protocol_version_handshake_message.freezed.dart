@@ -12,7 +12,7 @@ part of 'protocol_version_handshake_message.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RemoteFrameBufferProtocolVersion {
@@ -88,6 +88,9 @@ class _$RemoteFrameBufferProtocolVersionCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of RemoteFrameBufferProtocolVersion
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -110,6 +113,8 @@ class __$$RemoteFrameBufferProtocolVersionUnknownImplCopyWithImpl<$Res>
       $Res Function(_$RemoteFrameBufferProtocolVersionUnknownImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RemoteFrameBufferProtocolVersion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,7 +144,7 @@ class _$RemoteFrameBufferProtocolVersionUnknownImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferProtocolVersionUnknownImpl &&
@@ -149,7 +154,9 @@ class _$RemoteFrameBufferProtocolVersionUnknownImpl
   @override
   int get hashCode => Object.hash(runtimeType, bytes);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RemoteFrameBufferProtocolVersion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RemoteFrameBufferProtocolVersionUnknownImplCopyWith<
@@ -241,7 +248,10 @@ abstract class RemoteFrameBufferProtocolVersionUnknown
       _$RemoteFrameBufferProtocolVersionUnknownImpl;
 
   ByteData get bytes;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of RemoteFrameBufferProtocolVersion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RemoteFrameBufferProtocolVersionUnknownImplCopyWith<
           _$RemoteFrameBufferProtocolVersionUnknownImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -264,6 +274,9 @@ class __$$RemoteFrameBufferProtocolVersion_3_3ImplCopyWithImpl<$Res>
       _$RemoteFrameBufferProtocolVersion_3_3Impl _value,
       $Res Function(_$RemoteFrameBufferProtocolVersion_3_3Impl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RemoteFrameBufferProtocolVersion
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -278,7 +291,7 @@ class _$RemoteFrameBufferProtocolVersion_3_3Impl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferProtocolVersion_3_3Impl);
@@ -386,6 +399,9 @@ class __$$RemoteFrameBufferProtocolVersion_3_7ImplCopyWithImpl<$Res>
       _$RemoteFrameBufferProtocolVersion_3_7Impl _value,
       $Res Function(_$RemoteFrameBufferProtocolVersion_3_7Impl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RemoteFrameBufferProtocolVersion
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -400,7 +416,7 @@ class _$RemoteFrameBufferProtocolVersion_3_7Impl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferProtocolVersion_3_7Impl);
@@ -508,6 +524,9 @@ class __$$RemoteFrameBufferProtocolVersion_3_8ImplCopyWithImpl<$Res>
       _$RemoteFrameBufferProtocolVersion_3_8Impl _value,
       $Res Function(_$RemoteFrameBufferProtocolVersion_3_8Impl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RemoteFrameBufferProtocolVersion
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -522,7 +541,7 @@ class _$RemoteFrameBufferProtocolVersion_3_8Impl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferProtocolVersion_3_8Impl);
@@ -618,7 +637,9 @@ mixin _$RemoteFrameBufferProtocolVersionHandshakeMessage {
   RemoteFrameBufferProtocolVersion get version =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RemoteFrameBufferProtocolVersionHandshakeMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $RemoteFrameBufferProtocolVersionHandshakeMessageCopyWith<
           RemoteFrameBufferProtocolVersionHandshakeMessage>
       get copyWith => throw _privateConstructorUsedError;
@@ -650,6 +671,8 @@ class _$RemoteFrameBufferProtocolVersionHandshakeMessageCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RemoteFrameBufferProtocolVersionHandshakeMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -663,6 +686,8 @@ class _$RemoteFrameBufferProtocolVersionHandshakeMessageCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of RemoteFrameBufferProtocolVersionHandshakeMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RemoteFrameBufferProtocolVersionCopyWith<$Res> get version {
@@ -703,6 +728,8 @@ class __$$RemoteFrameBufferProtocolVersionHandshakeMessageImplCopyWithImpl<$Res>
           _then)
       : super(_value, _then);
 
+  /// Create a copy of RemoteFrameBufferProtocolVersionHandshakeMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -734,7 +761,7 @@ class _$RemoteFrameBufferProtocolVersionHandshakeMessageImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferProtocolVersionHandshakeMessageImpl &&
@@ -744,7 +771,9 @@ class _$RemoteFrameBufferProtocolVersionHandshakeMessageImpl
   @override
   int get hashCode => Object.hash(runtimeType, version);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RemoteFrameBufferProtocolVersionHandshakeMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RemoteFrameBufferProtocolVersionHandshakeMessageImplCopyWith<
@@ -764,8 +793,11 @@ abstract class _RemoteFrameBufferProtocolVersionHandshakeMessage
 
   @override
   RemoteFrameBufferProtocolVersion get version;
+
+  /// Create a copy of RemoteFrameBufferProtocolVersionHandshakeMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RemoteFrameBufferProtocolVersionHandshakeMessageImplCopyWith<
           _$RemoteFrameBufferProtocolVersionHandshakeMessageImpl>
       get copyWith => throw _privateConstructorUsedError;

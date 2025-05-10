@@ -52,6 +52,18 @@ class RemoteFrameBufferFrameBufferUpdateMessage
                       rectangleHeader.height *
                       (config.pixelFormat.bitsPerPixel / 8))
                   .toInt(),
+              cursor: (final _) {
+                // Calculate bytes for cursor pixels
+                final int pixelBytes = (rectangleHeader.width *
+                        rectangleHeader.height *
+                        (config.pixelFormat.bitsPerPixel / 8))
+                    .toInt();
+                // Calculate bytes for 1-bit-per-pixel mask, padded to a whole number of bytes
+                final int maskBytes = ((rectangleHeader.width + 7) ~/ 8) *
+                    rectangleHeader.height;
+                return pixelBytes + maskBytes;
+              },
+              desktopSize: (final _) => 0, // DesktopSize has no pixel data
               unsupported: (final _) => 0,
             );
             rectangles.add(

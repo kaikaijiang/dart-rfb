@@ -203,24 +203,52 @@ class RemoteFrameBufferClient {
           bell: () {},
           frameBufferUpdate:
               (final RemoteFrameBufferFrameBufferUpdateMessage message) {
-            _updateStreamController.add(
-              RemoteFrameBufferClientUpdate(
-                rectangles: message.rectangles.map(
-                  (
-                    final RemoteFrameBufferFrameBufferUpdateMessageRectangle
-                        rectangle,
-                  ) =>
-                      RemoteFrameBufferClientUpdateRectangle(
-                    byteData: rectangle.pixelData,
-                    encodingType: rectangle.encodingType,
-                    height: rectangle.height,
-                    width: rectangle.width,
-                    x: rectangle.x,
-                    y: rectangle.y,
-                  ),
-                ),
-              ),
-            );
+            // Check for DesktopSize pseudo-encoding first to update config
+            for (final RemoteFrameBufferFrameBufferUpdateMessageRectangle
+                rectangle in message.rectangles) {
+              rectangle.encodingType.mapOrNull(
+                desktopSize: (final _) {
+                  _config = _config.map(
+                    (final Config c) => c.copyWith(
+                      frameBufferWidth: rectangle.width,
+                      frameBufferHeight: rectangle.height,
+                    ),
+                  );
+                  logger.info(
+                    'Desktop size updated to ${rectangle.width}x${rectangle.height}',
+                  );
+                },
+              );
+            }
+
+            // Filter out DesktopSize rectangles before sending to UI for rendering
+            final List<RemoteFrameBufferClientUpdateRectangle> uiRectangles =
+                message.rectangles
+                    .where(
+                      (final RemoteFrameBufferFrameBufferUpdateMessageRectangle
+                              rect) =>
+                          rect.encodingType
+                              is! RemoteFrameBufferEncodingTypeDesktopSize,
+                    )
+                    .map(
+                      (final RemoteFrameBufferFrameBufferUpdateMessageRectangle
+                              rectangle) =>
+                          RemoteFrameBufferClientUpdateRectangle(
+                        byteData: rectangle.pixelData,
+                        encodingType: rectangle.encodingType,
+                        height: rectangle.height,
+                        width: rectangle.width,
+                        x: rectangle.x,
+                        y: rectangle.y,
+                      ),
+                    )
+                    .toList();
+
+            if (uiRectangles.isNotEmpty) {
+              _updateStreamController.add(
+                RemoteFrameBufferClientUpdate(rectangles: uiRectangles),
+              );
+            }
           },
           serverCutTextMessage:
               (final RemoteFrameBufferServerCutTextMessage message) =>
