@@ -53,7 +53,9 @@ class RemoteFrameBufferEncodingType with _$RemoteFrameBufferEncodingType {
         cursor: (final _) => -239,
         desktopSize: (final _) => -223,
         raw: (final _) => 0,
-        unsupported: (final unsupported) => unsupported.encodingId,
+        unsupported:
+            (final RemoteFrameBufferEncodingTypeUnsupported unsupported) =>
+                unsupported.encodingId,
       ),
     );
 
