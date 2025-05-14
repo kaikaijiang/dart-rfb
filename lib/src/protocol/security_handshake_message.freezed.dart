@@ -12,16 +12,14 @@ part of 'security_handshake_message.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$RemoteFrameBufferSecurityHandshakeMessage {
   Iterable<RemoteFrameBufferSecurityType> get securityTypes =>
       throw _privateConstructorUsedError;
 
-  /// Create a copy of RemoteFrameBufferSecurityHandshakeMessage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RemoteFrameBufferSecurityHandshakeMessageCopyWith<
           RemoteFrameBufferSecurityHandshakeMessage>
       get copyWith => throw _privateConstructorUsedError;
@@ -50,8 +48,6 @@ class _$RemoteFrameBufferSecurityHandshakeMessageCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RemoteFrameBufferSecurityHandshakeMessage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -88,8 +84,6 @@ class __$$RemoteFrameBufferSecurityHandshakeMessageImplCopyWithImpl<$Res>
       $Res Function(_$RemoteFrameBufferSecurityHandshakeMessageImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RemoteFrameBufferSecurityHandshakeMessage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -121,7 +115,7 @@ class _$RemoteFrameBufferSecurityHandshakeMessageImpl
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferSecurityHandshakeMessageImpl &&
@@ -133,9 +127,7 @@ class _$RemoteFrameBufferSecurityHandshakeMessageImpl
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(securityTypes));
 
-  /// Create a copy of RemoteFrameBufferSecurityHandshakeMessage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RemoteFrameBufferSecurityHandshakeMessageImplCopyWith<
@@ -155,11 +147,8 @@ abstract class _RemoteFrameBufferSecurityHandshakeMessage
 
   @override
   Iterable<RemoteFrameBufferSecurityType> get securityTypes;
-
-  /// Create a copy of RemoteFrameBufferSecurityHandshakeMessage
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RemoteFrameBufferSecurityHandshakeMessageImplCopyWith<
           _$RemoteFrameBufferSecurityHandshakeMessageImpl>
       get copyWith => throw _privateConstructorUsedError;

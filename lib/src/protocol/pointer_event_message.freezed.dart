@@ -12,7 +12,7 @@ part of 'pointer_event_message.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$RemoteFrameBufferPointerEventMessage {
@@ -27,9 +27,7 @@ mixin _$RemoteFrameBufferPointerEventMessage {
   int get x => throw _privateConstructorUsedError;
   int get y => throw _privateConstructorUsedError;
 
-  /// Create a copy of RemoteFrameBufferPointerEventMessage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RemoteFrameBufferPointerEventMessageCopyWith<
           RemoteFrameBufferPointerEventMessage>
       get copyWith => throw _privateConstructorUsedError;
@@ -67,8 +65,6 @@ class _$RemoteFrameBufferPointerEventMessageCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RemoteFrameBufferPointerEventMessage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -160,8 +156,6 @@ class __$$RemoteFrameBufferPointerEventMessageImplCopyWithImpl<$Res>
       $Res Function(_$RemoteFrameBufferPointerEventMessageImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RemoteFrameBufferPointerEventMessage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -265,7 +259,7 @@ class _$RemoteFrameBufferPointerEventMessageImpl
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferPointerEventMessageImpl &&
@@ -303,9 +297,7 @@ class _$RemoteFrameBufferPointerEventMessageImpl
       x,
       y);
 
-  /// Create a copy of RemoteFrameBufferPointerEventMessage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RemoteFrameBufferPointerEventMessageImplCopyWith<
@@ -349,11 +341,8 @@ abstract class _RemoteFrameBufferPointerEventMessage
   int get x;
   @override
   int get y;
-
-  /// Create a copy of RemoteFrameBufferPointerEventMessage
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RemoteFrameBufferPointerEventMessageImplCopyWith<
           _$RemoteFrameBufferPointerEventMessageImpl>
       get copyWith => throw _privateConstructorUsedError;

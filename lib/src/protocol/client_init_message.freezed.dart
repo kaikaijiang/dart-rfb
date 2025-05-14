@@ -12,15 +12,13 @@ part of 'client_init_message.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$RemoteFrameBufferClientInitMessage {
   bool get sharedFlag => throw _privateConstructorUsedError;
 
-  /// Create a copy of RemoteFrameBufferClientInitMessage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RemoteFrameBufferClientInitMessageCopyWith<
           RemoteFrameBufferClientInitMessage>
       get copyWith => throw _privateConstructorUsedError;
@@ -48,8 +46,6 @@ class _$RemoteFrameBufferClientInitMessageCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RemoteFrameBufferClientInitMessage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,8 +82,6 @@ class __$$RemoteFrameBufferClientInitMessageImplCopyWithImpl<$Res>
       $Res Function(_$RemoteFrameBufferClientInitMessageImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RemoteFrameBufferClientInitMessage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -118,7 +112,7 @@ class _$RemoteFrameBufferClientInitMessageImpl
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RemoteFrameBufferClientInitMessageImpl &&
@@ -129,9 +123,7 @@ class _$RemoteFrameBufferClientInitMessageImpl
   @override
   int get hashCode => Object.hash(runtimeType, sharedFlag);
 
-  /// Create a copy of RemoteFrameBufferClientInitMessage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RemoteFrameBufferClientInitMessageImplCopyWith<
@@ -149,11 +141,8 @@ abstract class _RemoteFrameBufferClientInitMessage
 
   @override
   bool get sharedFlag;
-
-  /// Create a copy of RemoteFrameBufferClientInitMessage
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RemoteFrameBufferClientInitMessageImplCopyWith<
           _$RemoteFrameBufferClientInitMessageImpl>
       get copyWith => throw _privateConstructorUsedError;
