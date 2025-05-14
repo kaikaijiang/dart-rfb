@@ -19,27 +19,27 @@ mixin _$RemoteFrameBufferEncodingType {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() copyRect,
-    required TResult Function() raw,
     required TResult Function() cursor,
     required TResult Function() desktopSize,
+    required TResult Function() raw,
     required TResult Function(ByteData bytes, int encodingId) unsupported,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? copyRect,
-    TResult? Function()? raw,
     TResult? Function()? cursor,
     TResult? Function()? desktopSize,
+    TResult? Function()? raw,
     TResult? Function(ByteData bytes, int encodingId)? unsupported,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? copyRect,
-    TResult Function()? raw,
     TResult Function()? cursor,
     TResult Function()? desktopSize,
+    TResult Function()? raw,
     TResult Function(ByteData bytes, int encodingId)? unsupported,
     required TResult orElse(),
   }) =>
@@ -48,10 +48,10 @@ mixin _$RemoteFrameBufferEncodingType {
   TResult map<TResult extends Object?>({
     required TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)
         copyRect,
-    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeCursor value) cursor,
     required TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)
         desktopSize,
+    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)
         unsupported,
   }) =>
@@ -59,10 +59,10 @@ mixin _$RemoteFrameBufferEncodingType {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult? Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
   }) =>
@@ -70,10 +70,10 @@ mixin _$RemoteFrameBufferEncodingType {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
     required TResult orElse(),
@@ -152,9 +152,9 @@ class _$RemoteFrameBufferEncodingTypeCopyRectImpl
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() copyRect,
-    required TResult Function() raw,
     required TResult Function() cursor,
     required TResult Function() desktopSize,
+    required TResult Function() raw,
     required TResult Function(ByteData bytes, int encodingId) unsupported,
   }) {
     return copyRect();
@@ -164,9 +164,9 @@ class _$RemoteFrameBufferEncodingTypeCopyRectImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? copyRect,
-    TResult? Function()? raw,
     TResult? Function()? cursor,
     TResult? Function()? desktopSize,
+    TResult? Function()? raw,
     TResult? Function(ByteData bytes, int encodingId)? unsupported,
   }) {
     return copyRect?.call();
@@ -176,9 +176,9 @@ class _$RemoteFrameBufferEncodingTypeCopyRectImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? copyRect,
-    TResult Function()? raw,
     TResult Function()? cursor,
     TResult Function()? desktopSize,
+    TResult Function()? raw,
     TResult Function(ByteData bytes, int encodingId)? unsupported,
     required TResult orElse(),
   }) {
@@ -193,10 +193,10 @@ class _$RemoteFrameBufferEncodingTypeCopyRectImpl
   TResult map<TResult extends Object?>({
     required TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)
         copyRect,
-    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeCursor value) cursor,
     required TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)
         desktopSize,
+    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)
         unsupported,
   }) {
@@ -207,10 +207,10 @@ class _$RemoteFrameBufferEncodingTypeCopyRectImpl
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult? Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
   }) {
@@ -221,10 +221,10 @@ class _$RemoteFrameBufferEncodingTypeCopyRectImpl
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
     required TResult orElse(),
@@ -241,144 +241,6 @@ abstract class RemoteFrameBufferEncodingTypeCopyRect
   const factory RemoteFrameBufferEncodingTypeCopyRect() =
       _$RemoteFrameBufferEncodingTypeCopyRectImpl;
   const RemoteFrameBufferEncodingTypeCopyRect._() : super._();
-}
-
-/// @nodoc
-abstract class _$$RemoteFrameBufferEncodingTypeRawImplCopyWith<$Res> {
-  factory _$$RemoteFrameBufferEncodingTypeRawImplCopyWith(
-          _$RemoteFrameBufferEncodingTypeRawImpl value,
-          $Res Function(_$RemoteFrameBufferEncodingTypeRawImpl) then) =
-      __$$RemoteFrameBufferEncodingTypeRawImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$RemoteFrameBufferEncodingTypeRawImplCopyWithImpl<$Res>
-    extends _$RemoteFrameBufferEncodingTypeCopyWithImpl<$Res,
-        _$RemoteFrameBufferEncodingTypeRawImpl>
-    implements _$$RemoteFrameBufferEncodingTypeRawImplCopyWith<$Res> {
-  __$$RemoteFrameBufferEncodingTypeRawImplCopyWithImpl(
-      _$RemoteFrameBufferEncodingTypeRawImpl _value,
-      $Res Function(_$RemoteFrameBufferEncodingTypeRawImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of RemoteFrameBufferEncodingType
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-
-class _$RemoteFrameBufferEncodingTypeRawImpl
-    extends RemoteFrameBufferEncodingTypeRaw {
-  const _$RemoteFrameBufferEncodingTypeRawImpl() : super._();
-
-  @override
-  String toString() {
-    return 'RemoteFrameBufferEncodingType.raw()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$RemoteFrameBufferEncodingTypeRawImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() copyRect,
-    required TResult Function() raw,
-    required TResult Function() cursor,
-    required TResult Function() desktopSize,
-    required TResult Function(ByteData bytes, int encodingId) unsupported,
-  }) {
-    return raw();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? copyRect,
-    TResult? Function()? raw,
-    TResult? Function()? cursor,
-    TResult? Function()? desktopSize,
-    TResult? Function(ByteData bytes, int encodingId)? unsupported,
-  }) {
-    return raw?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? copyRect,
-    TResult Function()? raw,
-    TResult Function()? cursor,
-    TResult Function()? desktopSize,
-    TResult Function(ByteData bytes, int encodingId)? unsupported,
-    required TResult orElse(),
-  }) {
-    if (raw != null) {
-      return raw();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)
-        copyRect,
-    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
-    required TResult Function(RemoteFrameBufferEncodingTypeCursor value) cursor,
-    required TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)
-        desktopSize,
-    required TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)
-        unsupported,
-  }) {
-    return raw(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
-    TResult? Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
-    TResult? Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
-        desktopSize,
-    TResult? Function(RemoteFrameBufferEncodingTypeUnsupported value)?
-        unsupported,
-  }) {
-    return raw?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
-    TResult Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
-    TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
-        desktopSize,
-    TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)?
-        unsupported,
-    required TResult orElse(),
-  }) {
-    if (raw != null) {
-      return raw(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class RemoteFrameBufferEncodingTypeRaw
-    extends RemoteFrameBufferEncodingType {
-  const factory RemoteFrameBufferEncodingTypeRaw() =
-      _$RemoteFrameBufferEncodingTypeRawImpl;
-  const RemoteFrameBufferEncodingTypeRaw._() : super._();
 }
 
 /// @nodoc
@@ -428,9 +290,9 @@ class _$RemoteFrameBufferEncodingTypeCursorImpl
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() copyRect,
-    required TResult Function() raw,
     required TResult Function() cursor,
     required TResult Function() desktopSize,
+    required TResult Function() raw,
     required TResult Function(ByteData bytes, int encodingId) unsupported,
   }) {
     return cursor();
@@ -440,9 +302,9 @@ class _$RemoteFrameBufferEncodingTypeCursorImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? copyRect,
-    TResult? Function()? raw,
     TResult? Function()? cursor,
     TResult? Function()? desktopSize,
+    TResult? Function()? raw,
     TResult? Function(ByteData bytes, int encodingId)? unsupported,
   }) {
     return cursor?.call();
@@ -452,9 +314,9 @@ class _$RemoteFrameBufferEncodingTypeCursorImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? copyRect,
-    TResult Function()? raw,
     TResult Function()? cursor,
     TResult Function()? desktopSize,
+    TResult Function()? raw,
     TResult Function(ByteData bytes, int encodingId)? unsupported,
     required TResult orElse(),
   }) {
@@ -469,10 +331,10 @@ class _$RemoteFrameBufferEncodingTypeCursorImpl
   TResult map<TResult extends Object?>({
     required TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)
         copyRect,
-    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeCursor value) cursor,
     required TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)
         desktopSize,
+    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)
         unsupported,
   }) {
@@ -483,10 +345,10 @@ class _$RemoteFrameBufferEncodingTypeCursorImpl
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult? Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
   }) {
@@ -497,10 +359,10 @@ class _$RemoteFrameBufferEncodingTypeCursorImpl
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
     required TResult orElse(),
@@ -566,9 +428,9 @@ class _$RemoteFrameBufferEncodingTypeDesktopSizeImpl
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() copyRect,
-    required TResult Function() raw,
     required TResult Function() cursor,
     required TResult Function() desktopSize,
+    required TResult Function() raw,
     required TResult Function(ByteData bytes, int encodingId) unsupported,
   }) {
     return desktopSize();
@@ -578,9 +440,9 @@ class _$RemoteFrameBufferEncodingTypeDesktopSizeImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? copyRect,
-    TResult? Function()? raw,
     TResult? Function()? cursor,
     TResult? Function()? desktopSize,
+    TResult? Function()? raw,
     TResult? Function(ByteData bytes, int encodingId)? unsupported,
   }) {
     return desktopSize?.call();
@@ -590,9 +452,9 @@ class _$RemoteFrameBufferEncodingTypeDesktopSizeImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? copyRect,
-    TResult Function()? raw,
     TResult Function()? cursor,
     TResult Function()? desktopSize,
+    TResult Function()? raw,
     TResult Function(ByteData bytes, int encodingId)? unsupported,
     required TResult orElse(),
   }) {
@@ -607,10 +469,10 @@ class _$RemoteFrameBufferEncodingTypeDesktopSizeImpl
   TResult map<TResult extends Object?>({
     required TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)
         copyRect,
-    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeCursor value) cursor,
     required TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)
         desktopSize,
+    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)
         unsupported,
   }) {
@@ -621,10 +483,10 @@ class _$RemoteFrameBufferEncodingTypeDesktopSizeImpl
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult? Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
   }) {
@@ -635,10 +497,10 @@ class _$RemoteFrameBufferEncodingTypeDesktopSizeImpl
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
     required TResult orElse(),
@@ -655,6 +517,144 @@ abstract class RemoteFrameBufferEncodingTypeDesktopSize
   const factory RemoteFrameBufferEncodingTypeDesktopSize() =
       _$RemoteFrameBufferEncodingTypeDesktopSizeImpl;
   const RemoteFrameBufferEncodingTypeDesktopSize._() : super._();
+}
+
+/// @nodoc
+abstract class _$$RemoteFrameBufferEncodingTypeRawImplCopyWith<$Res> {
+  factory _$$RemoteFrameBufferEncodingTypeRawImplCopyWith(
+          _$RemoteFrameBufferEncodingTypeRawImpl value,
+          $Res Function(_$RemoteFrameBufferEncodingTypeRawImpl) then) =
+      __$$RemoteFrameBufferEncodingTypeRawImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$RemoteFrameBufferEncodingTypeRawImplCopyWithImpl<$Res>
+    extends _$RemoteFrameBufferEncodingTypeCopyWithImpl<$Res,
+        _$RemoteFrameBufferEncodingTypeRawImpl>
+    implements _$$RemoteFrameBufferEncodingTypeRawImplCopyWith<$Res> {
+  __$$RemoteFrameBufferEncodingTypeRawImplCopyWithImpl(
+      _$RemoteFrameBufferEncodingTypeRawImpl _value,
+      $Res Function(_$RemoteFrameBufferEncodingTypeRawImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of RemoteFrameBufferEncodingType
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$RemoteFrameBufferEncodingTypeRawImpl
+    extends RemoteFrameBufferEncodingTypeRaw {
+  const _$RemoteFrameBufferEncodingTypeRawImpl() : super._();
+
+  @override
+  String toString() {
+    return 'RemoteFrameBufferEncodingType.raw()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$RemoteFrameBufferEncodingTypeRawImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() copyRect,
+    required TResult Function() cursor,
+    required TResult Function() desktopSize,
+    required TResult Function() raw,
+    required TResult Function(ByteData bytes, int encodingId) unsupported,
+  }) {
+    return raw();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? copyRect,
+    TResult? Function()? cursor,
+    TResult? Function()? desktopSize,
+    TResult? Function()? raw,
+    TResult? Function(ByteData bytes, int encodingId)? unsupported,
+  }) {
+    return raw?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? copyRect,
+    TResult Function()? cursor,
+    TResult Function()? desktopSize,
+    TResult Function()? raw,
+    TResult Function(ByteData bytes, int encodingId)? unsupported,
+    required TResult orElse(),
+  }) {
+    if (raw != null) {
+      return raw();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)
+        copyRect,
+    required TResult Function(RemoteFrameBufferEncodingTypeCursor value) cursor,
+    required TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)
+        desktopSize,
+    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
+    required TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)
+        unsupported,
+  }) {
+    return raw(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
+    TResult? Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
+    TResult? Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
+        desktopSize,
+    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
+    TResult? Function(RemoteFrameBufferEncodingTypeUnsupported value)?
+        unsupported,
+  }) {
+    return raw?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
+    TResult Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
+    TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
+        desktopSize,
+    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
+    TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)?
+        unsupported,
+    required TResult orElse(),
+  }) {
+    if (raw != null) {
+      return raw(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class RemoteFrameBufferEncodingTypeRaw
+    extends RemoteFrameBufferEncodingType {
+  const factory RemoteFrameBufferEncodingTypeRaw() =
+      _$RemoteFrameBufferEncodingTypeRawImpl;
+  const RemoteFrameBufferEncodingTypeRaw._() : super._();
 }
 
 /// @nodoc
@@ -744,9 +744,9 @@ class _$RemoteFrameBufferEncodingTypeUnsupportedImpl
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() copyRect,
-    required TResult Function() raw,
     required TResult Function() cursor,
     required TResult Function() desktopSize,
+    required TResult Function() raw,
     required TResult Function(ByteData bytes, int encodingId) unsupported,
   }) {
     return unsupported(bytes, encodingId);
@@ -756,9 +756,9 @@ class _$RemoteFrameBufferEncodingTypeUnsupportedImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? copyRect,
-    TResult? Function()? raw,
     TResult? Function()? cursor,
     TResult? Function()? desktopSize,
+    TResult? Function()? raw,
     TResult? Function(ByteData bytes, int encodingId)? unsupported,
   }) {
     return unsupported?.call(bytes, encodingId);
@@ -768,9 +768,9 @@ class _$RemoteFrameBufferEncodingTypeUnsupportedImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? copyRect,
-    TResult Function()? raw,
     TResult Function()? cursor,
     TResult Function()? desktopSize,
+    TResult Function()? raw,
     TResult Function(ByteData bytes, int encodingId)? unsupported,
     required TResult orElse(),
   }) {
@@ -785,10 +785,10 @@ class _$RemoteFrameBufferEncodingTypeUnsupportedImpl
   TResult map<TResult extends Object?>({
     required TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)
         copyRect,
-    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeCursor value) cursor,
     required TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)
         desktopSize,
+    required TResult Function(RemoteFrameBufferEncodingTypeRaw value) raw,
     required TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)
         unsupported,
   }) {
@@ -799,10 +799,10 @@ class _$RemoteFrameBufferEncodingTypeUnsupportedImpl
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult? Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult? Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult? Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
   }) {
@@ -813,10 +813,10 @@ class _$RemoteFrameBufferEncodingTypeUnsupportedImpl
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(RemoteFrameBufferEncodingTypeCopyRect value)? copyRect,
-    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeCursor value)? cursor,
     TResult Function(RemoteFrameBufferEncodingTypeDesktopSize value)?
         desktopSize,
+    TResult Function(RemoteFrameBufferEncodingTypeRaw value)? raw,
     TResult Function(RemoteFrameBufferEncodingTypeUnsupported value)?
         unsupported,
     required TResult orElse(),

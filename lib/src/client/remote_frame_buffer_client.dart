@@ -204,14 +204,14 @@ class RemoteFrameBufferClient {
           frameBufferUpdate:
               (final RemoteFrameBufferFrameBufferUpdateMessage message) {
             // Check for DesktopSize pseudo-encoding first to update config
-            for (final RemoteFrameBufferFrameBufferUpdateMessageRectangle
-                rectangle in message.rectangles) {
+            for (final RemoteFrameBufferFrameBufferUpdateMessageRectangle rectangle
+                in message.rectangles) {
               rectangle.encodingType.mapOrNull(
                 desktopSize: (final _) {
                   _config = _config.map(
                     (final Config c) => c.copyWith(
-                      frameBufferWidth: rectangle.width,
                       frameBufferHeight: rectangle.height,
+                      frameBufferWidth: rectangle.width,
                     ),
                   );
                   logger.info(
@@ -225,14 +225,18 @@ class RemoteFrameBufferClient {
             final List<RemoteFrameBufferClientUpdateRectangle> uiRectangles =
                 message.rectangles
                     .where(
-                      (final RemoteFrameBufferFrameBufferUpdateMessageRectangle
-                              rect) =>
+                      (
+                        final RemoteFrameBufferFrameBufferUpdateMessageRectangle
+                            rect,
+                      ) =>
                           rect.encodingType
                               is! RemoteFrameBufferEncodingTypeDesktopSize,
                     )
                     .map(
-                      (final RemoteFrameBufferFrameBufferUpdateMessageRectangle
-                              rectangle) =>
+                      (
+                        final RemoteFrameBufferFrameBufferUpdateMessageRectangle
+                            rectangle,
+                      ) =>
                           RemoteFrameBufferClientUpdateRectangle(
                         byteData: rectangle.pixelData,
                         encodingType: rectangle.encodingType,
